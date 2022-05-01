@@ -1,23 +1,10 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Algebra Abstracta Hecha bien
-author: Christopheer Saldias & Matias Fernandez
-logo: logo.jpg
-
-# Force re-execution of notebooks on each build.
-# See https://jupyterbook.org/content/execute.html
-execute:
-  execute_notebooks: force
-
-# Define the name of the latex output file for PDF builds
-latex:
-  latex_documents:
-    targetname: book.tex
-
-# Add a bibtex file so that we can create citations
-bibtex_bibfiles:
-  - references.bib
+title: Álgebra Abstracta Hecha Bien
+author: Christopheer Saldias & Matías Fernández
+logo: src/logo.jpg
+copyright: "2022"
 
 # Information about where the book exists on the web
 repository:
@@ -25,8 +12,38 @@ repository:
   path_to_book: docs  # Optional path to your book, relative to the repository root
   branch: main  # Which branch of the repository should be used when creating links (optional)
 
+parse:
+  myst_enable_extensions:
+    # don't forget to list any other extensions you want enabled,
+    # including those that are enabled by default!
+    - amsmath
+    - dollarmath
+    - colon_fence
+    - html_image
+
+sphinx:
+  extra_extensions:
+    - sphinx_proof
+    - sphinx_jupyterbook_latex
+  config:
+    language: es
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: false
+
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
   use_issues_button: true
   use_repository_button: true
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib

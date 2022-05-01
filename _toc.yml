@@ -3,16 +3,15 @@
 
 format: jb-book
 root: intro
-parts:
-  - caption: Grupos
-    chapters:
-    - file: Grupos/Grupos
-      sections:
-      - file: Grupos/Ejemplos
-      - file: Grupos/Problemas
-  - caption: Anillos
-    chapters:
-    - file: Anillos/Anillos
-      sections:
-      - file: Anillos/Ejemplos
-      - file: Anillos/Problemas
+options:
+  numbered: True
+chapters:
+  - file: Grupos/Grupos
+    sections:
+    - file: Grupos/Definiciones_base
+    - file: Grupos/Problemas
+  - file: Anillos/Anillos
+    sections:
+    - file: Anillos/Ejemplos
+    - file: Anillos/Problemas
+  # - file: references
