@@ -9,6 +9,9 @@ chapters:
   - file: Grupos/Grupos
     sections:
     - file: Grupos/Definiciones_base
+    - file: Grupos/Ejemplos_grupos
+    - file: Grupos/Notaciones
+    - file: Grupos/Generadores
     - file: Grupos/Problemas
   - file: Anillos/Anillos
     sections:
