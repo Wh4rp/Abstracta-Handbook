@@ -1,5 +1,4 @@
-# Grupossss
+# Grupos
 
-Los grupos son...
+En esta primera parte se presentarán las estructuras algebraicas llamadas grupos. 
 
-'aaaaa'aa'aa'ssco 
