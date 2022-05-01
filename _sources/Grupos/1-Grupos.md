@@ -1,3 +1,3 @@
-# Grupossss
+# 1. Grupos
 
 Los grupos son...
