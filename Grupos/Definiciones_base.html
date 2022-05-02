@@ -260,13 +260,18 @@ const thebe_selector_output = ".output, .cell_output"
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#operaciones">
-   1.1.1. Operaciones
+  <a class="reference internal nav-link" href="#operacion-binaria">
+   1.1.1. Operación binaria
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#grupo">
+   1.1.2. Grupo
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#propiedades">
-   1.1.2. Propiedades
+   1.1.3. Propiedades
   </a>
  </li>
 </ul>
@@ -290,13 +295,18 @@ const thebe_selector_output = ".output, .cell_output"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#operaciones">
-   1.1.1. Operaciones
+  <a class="reference internal nav-link" href="#operacion-binaria">
+   1.1.1. Operación binaria
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#grupo">
+   1.1.2. Grupo
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#propiedades">
-   1.1.2. Propiedades
+   1.1.3. Propiedades
   </a>
  </li>
 </ul>
@@ -310,15 +320,25 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="conceptos-base">
 <h1><span class="section-number">1.1. </span>Conceptos base<a class="headerlink" href="#conceptos-base" title="Enlazar permanentemente con este título">¶</a></h1>
-<p>Bajo la noción de grupo que se va a presentar en este libro se va a definir la operación binaria.</p>
-<div class="section" id="operaciones">
-<h2><span class="section-number">1.1.1. </span>Operaciones<a class="headerlink" href="#operaciones" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El concepto de <em><strong>grupo</strong></em> deviene de observar que hay propieades no triviales que son invariantes entre diversos conjuntos que poseen una operación asociada, por ejemplo los tanto en conjunto de las funciones biyectivas y el de las matrices se tiene que el inverso de <span class="math notranslate nohighlight">\(AB\)</span> o <span class="math notranslate nohighlight">\(f \circ g\)</span> es de la forma <span class="math notranslate nohighlight">\(B^{-1}A^{-1}\)</span> o <span class="math notranslate nohighlight">\(g^{-1} \circ f^{-1}\)</span> respectivamente.</p>
+<p>Lo interesante de esto es que dichos resultados no estan presenten por simple coincidencia sino que debido a que sus operaciones asociadas cumple con cieros tres (o cuatro) axiomas principales. Y que debido a esta <em>abstracción</em> se derivan las demás propieades no triviales.</p>
+<div class="section" id="operacion-binaria">
+<h2><span class="section-number">1.1.1. </span>Operación binaria<a class="headerlink" href="#operacion-binaria" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Bajo la noción de grupo que se va a presentar en este libro primero se definirá la operación binaria.</p>
 <div class="proof definition admonition" id="operacion-binaria">
 <p class="admonition-title"><span class="caption-number">Definición 1.1 </span> (Operación binaria)</p>
 <div class="definition-content section" id="proof-content">
-<p>Una operación binaría <span class="math notranslate nohighlight">\(\star\)</span> en un conjunto, es una regla que asigna a cada par ordenado de elementos de un conjunto, algún elemento del conjunto.</p>
+<p>Una operación binaria <span class="math notranslate nohighlight">\(\star\)</span> en un conjunto no vacio <span class="math notranslate nohighlight">\(A\)</span>, es una función que asigna a cada par ordenado de elementos de <span class="math notranslate nohighlight">\(A\)</span>, algún elemento del conjunto. S</p>
 </div>
-</div><p>Luego ya estamos listos para definir un <em>grupo</em> como tal.</p>
+</div><div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Se dice que <span class="math notranslate nohighlight">\(a \star b = c\)</span> si y sólo si <span class="math notranslate nohighlight">\(\star(a, b) = c\)</span> para <span class="math notranslate nohighlight">\(a, b, c \in A\)</span>.</p>
+</div>
+<p>De la forma en que está definido la operación binaria se pide que sea cerrado. Es decir, para cualquiera que sean los dos operandos, digamos <span class="math notranslate nohighlight">\(a\)</span> y <span class="math notranslate nohighlight">\(b\)</span> en <span class="math notranslate nohighlight">\(A\)</span>, el resultado de <span class="math notranslate nohighlight">\(a \star b\)</span> siempre está dentro de <span class="math notranslate nohighlight">\(A\)</span>.</p>
+</div>
+<div class="section" id="grupo">
+<h2><span class="section-number">1.1.2. </span>Grupo<a class="headerlink" href="#grupo" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Con esto ya en mente vamos a solicitar que para que un conjunto con una operación asociada cumpla una serie de principios. Informalmente se dice que un grupo es un conjunto que tiene asociada una operación que funciona <em>bien</em> o como uno está habituado a que funcionen las operaciones si se piensa en los enteros o reales.</p>
 <div class="proof definition admonition" id="grupo">
 <p class="admonition-title"><span class="caption-number">Definición 1.2 </span> (Grupo)</p>
 <div class="definition-content section" id="proof-content">
@@ -354,23 +374,92 @@ g \star h = e = h \star g
 i.e. para todo <span class="math notranslate nohighlight">\(f, g \in G\)</span> se tiene que <span class="math notranslate nohighlight">\(f \star g = g \star f\)</span>,
 se dice que el grupo <span class="math notranslate nohighlight">\((G, \star)\)</span> es <strong>abeliano</strong>.</p>
 </div>
+<p>Es común que muchas veces se obvie el operador en la notación <span class="math notranslate nohighlight">\((G, \star)\)</span> y tan sólo se diga:</p>
+<blockquote>
+<div><p>Sea <span class="math notranslate nohighlight">\(G\)</span> grupo <span class="math notranslate nohighlight">\(\ldots\)</span></p>
+</div></blockquote>
 </div>
 <div class="section" id="propiedades">
-<h2><span class="section-number">1.1.2. </span>Propiedades<a class="headerlink" href="#propiedades" title="Enlazar permanentemente con este título">¶</a></h2>
+<h2><span class="section-number">1.1.3. </span>Propiedades<a class="headerlink" href="#propiedades" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Algunas propieades básicas que se desprenden de las propieades de todo grupo <span class="math notranslate nohighlight">\((G, \star)\)</span> son</p>
 <div class="proof property admonition" id="property-2">
 <p class="admonition-title"><span class="caption-number">Propiedad 1.1 </span></p>
 <div class="property-content section" id="proof-content">
 <p>El elemento neutro es único</p>
+<div class="dropdown admonition">
+<p class="admonition-title">Demostración</p>
+<p>Procedamos por contradicción y supongamos que existen dos <span class="math notranslate nohighlight">\(e_1\)</span> y <span class="math notranslate nohighlight">\(e_2\)</span> elementos neutros distintos. Pero podemos operar entos dos entre si de tal forma que</p>
+<div class="math notranslate nohighlight">
+\[
+e_1 = e_1 \star e_2 = e_2
+\]</div>
+<p>llegamos a que <span class="math notranslate nohighlight">\(e_1 = e_2\)</span> contradicción.</p>
+<p>Por ende el elemento neutro es único.</p>
+</div>
 </div>
 </div><div class="proof property admonition" id="property-3">
 <p class="admonition-title"><span class="caption-number">Propiedad 1.2 </span></p>
 <div class="property-content section" id="proof-content">
 <p>Dado <span class="math notranslate nohighlight">\(g \in G\)</span> su inverso (<span class="math notranslate nohighlight">\(g^{-1}\)</span>) es único.</p>
+<div class="dropdown admonition">
+<p class="admonition-title">Demostración</p>
+<p>Procedamos por contradicción. Sea <span class="math notranslate nohighlight">\(g \in G\)</span> cualquiera, luego supongamos que existen dos <span class="math notranslate nohighlight">\(h_1, h_2 \in G\)</span> tales que</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+g \star h_1 = e = h_1 \star g \\
+g \star h_2 = e = h_2 \star g \\
+\end{align*}
+\end{split}\]</div>
+<p>Luego notemos que</p>
+<div class="math notranslate nohighlight">
+\[
+h_1 \star g \star h_2 = (h_1 \star g) \star h_2 = e \star h_2 = h_2
+\]</div>
+<p>y por otro lado, dado que <span class="math notranslate nohighlight">\(\star\)</span> es asociativo</p>
+<div class="math notranslate nohighlight">
+\[
+h_1 \star g \star h_2 = h_1 \star (g \star h_2) = h_1 \star e = h_1
+\]</div>
+<p>Entonces llegamos a que <span class="math notranslate nohighlight">\(h_1 = h_2\)</span>, contradicción.</p>
+<p>Por lo tanto dado <span class="math notranslate nohighlight">\(g \in G\)</span> su inverso es único.</p>
+</div>
 </div>
 </div><div class="proof property admonition" id="property-4">
 <p class="admonition-title"><span class="caption-number">Propiedad 1.3 </span></p>
 <div class="property-content section" id="proof-content">
 <p><span class="math notranslate nohighlight">\((a \star b)^{-1}=b^{-1} \star a^{-1}\)</span></p>
+<div class="dropdown admonition">
+<p class="admonition-title">Demostración</p>
+<p>Por definición basta probar que</p>
+<div class="math notranslate nohighlight">
+\[
+(a \star b) \star (b^{-1} \star a^{-1}) = e = (b^{-1} \star a^{-1}) \star (a \star b)
+\]</div>
+<p>En efecto, utilizando la propiedad asociativa desallorramos como sigue</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+(a \star b) \star (b^{-1} \star a^{-1}) &amp; = a \star (b \star (b^{-1} \star a^{-1})) \\
+&amp; = a \star ((b \star b^{-1}) \star a^{-1}) \\
+&amp; = a \star (e \star a^{-1}) \\
+&amp; = a \star a^{-1} \\
+&amp; = e
+\end{align*}
+\end{split}\]</div>
+<p>Y análogamente para el otro lado</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+(b^{-1} \star a^{-1}) \star (a \star b) &amp; = b^{-1} \star (a^{-1} \star (a \star b)) \\
+&amp; = b^{-1} \star ((a^{-1} \star a) \star b) \\
+&amp; = b^{-1} \star (e \star b) \\
+&amp; = b^{-1} \star b \\
+&amp; = e
+\end{align*}
+\end{split}\]</div>
+<p>Que era lo que queríamos demostrar.</p>
+</div>
 </div>
 </div></div>
 </div>

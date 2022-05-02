@@ -1,13 +1,28 @@
 # Conceptos base
-Bajo la noción de grupo que se va a presentar en este libro se va a definir la operación binaria.
-## Operaciones
+
+El concepto de ___grupo___ deviene de observar que hay propieades no triviales que son invariantes entre diversos conjuntos que poseen una operación asociada, por ejemplo los tanto en conjunto de las funciones biyectivas y el de las matrices se tiene que el inverso de $AB$ o $f \circ g$ es de la forma $B^{-1}A^{-1}$ o $g^{-1} \circ f^{-1}$ respectivamente. 
+
+Lo interesante de esto es que dichos resultados no estan presenten por simple coincidencia sino que debido a que sus operaciones asociadas cumple con cieros tres (o cuatro) axiomas principales. Y que debido a esta _abstracción_ se derivan las demás propieades no triviales. 
+
+## Operación binaria
+
+Bajo la noción de grupo que se va a presentar en este libro primero se definirá la operación binaria. 
+
 :::{prf:definition} Operación binaria
 :label: operacion-binaria
 
-Una operación binaría $\star$ en un conjunto, es una regla que asigna a cada par ordenado de elementos de un conjunto, algún elemento del conjunto.
+Una operación binaria $\star$ en un conjunto no vacio $A$, es una función que asigna a cada par ordenado de elementos de $A$, algún elemento del conjunto. S
 :::
 
-Luego ya estamos listos para definir un _grupo_ como tal.
+:::{note}
+Se dice que $a \star b = c$ si y sólo si $\star(a, b) = c$ para $a, b, c \in A$. 
+:::
+
+De la forma en que está definido la operación binaria se pide que sea cerrado. Es decir, para cualquiera que sean los dos operandos, digamos $a$ y $b$ en $A$, el resultado de $a \star b$ siempre está dentro de $A$. 
+
+## Grupo
+
+Con esto ya en mente vamos a solicitar que para que un conjunto con una operación asociada cumpla una serie de principios. Informalmente se dice que un grupo es un conjunto que tiene asociada una operación que funciona _bien_ o como uno está habituado a que funcionen las operaciones si se piensa en los enteros o reales. 
 
 ::::{prf:definition} Grupo
 :label: grupo
@@ -40,17 +55,103 @@ i.e. para todo $f, g \in G$ se tiene que $f \star g = g \star f$,
  se dice que el grupo $(G, \star)$ es **abeliano**. 
 ```
 
+Es común que muchas veces se obvie el operador en la notación $(G, \star)$ y tan sólo se diga:
+
+> Sea $G$ grupo $\ldots$
 
 ## Propiedades
+Algunas propieades básicas que se desprenden de las propieades de todo grupo $(G, \star)$ son
 
-:::{prf:property}
+::::{prf:property}
 El elemento neutro es único
+
+:::{admonition} Demostración
+:class: dropdown
+
+Procedamos por contradicción y supongamos que existen dos $e_1$ y $e_2$ elementos neutros distintos. Pero podemos operar entos dos entre si de tal forma que 
+
+$$
+e_1 = e_1 \star e_2 = e_2
+$$
+
+llegamos a que $e_1 = e_2$ contradicción.
+
+Por ende el elemento neutro es único.
 :::
 
-:::{prf:property}
+::::
+
+::::{prf:property}
 Dado $g \in G$ su inverso ($g^{-1}$) es único. 
+
+:::{admonition} Demostración
+:class: dropdown
+
+Procedamos por contradicción. Sea $g \in G$ cualquiera, luego supongamos que existen dos $h_1, h_2 \in G$ tales que
+
+$$
+\begin{align*}
+g \star h_1 = e = h_1 \star g \\
+g \star h_2 = e = h_2 \star g \\
+\end{align*}
+$$
+
+Luego notemos que
+
+$$
+h_1 \star g \star h_2 = (h_1 \star g) \star h_2 = e \star h_2 = h_2
+$$
+
+y por otro lado, dado que $\star$ es asociativo
+
+$$
+h_1 \star g \star h_2 = h_1 \star (g \star h_2) = h_1 \star e = h_1
+$$
+
+Entonces llegamos a que $h_1 = h_2$, contradicción. 
+
+Por lo tanto dado $g \in G$ su inverso es único. 
 :::
 
-:::{prf:property}
+::::
+
+::::{prf:property}
 $(a \star b)^{-1}=b^{-1} \star a^{-1}$
+
+:::{admonition} Demostración
+:class: dropdown
+
+Por definición basta probar que 
+
+$$
+(a \star b) \star (b^{-1} \star a^{-1}) = e = (b^{-1} \star a^{-1}) \star (a \star b)
+$$
+
+En efecto, utilizando la propiedad asociativa desallorramos como sigue
+
+$$
+\begin{align*}
+(a \star b) \star (b^{-1} \star a^{-1}) & = a \star (b \star (b^{-1} \star a^{-1})) \\
+& = a \star ((b \star b^{-1}) \star a^{-1}) \\
+& = a \star (e \star a^{-1}) \\
+& = a \star a^{-1} \\
+& = e
+\end{align*}
+$$
+
+Y análogamente para el otro lado
+
+$$
+\begin{align*}
+(b^{-1} \star a^{-1}) \star (a \star b) & = b^{-1} \star (a^{-1} \star (a \star b)) \\
+& = b^{-1} \star ((a^{-1} \star a) \star b) \\
+& = b^{-1} \star (e \star b) \\
+& = b^{-1} \star b \\
+& = e
+\end{align*}
+$$
+
+Que era lo que queríamos demostrar.
 :::
+
+::::
