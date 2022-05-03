@@ -20,12 +20,21 @@ Se dice que $a \star b = c$ si y sólo si $\star(a, b) = c$ para $a, b, c \in A$
 
 De la forma en que está definido la operación binaria se pide que sea cerrado. Es decir, para cualquiera que sean los dos operandos, digamos $a$ y $b$ en $A$, el resultado de $a \star b$ siempre está dentro de $A$. 
 
+Al decir "par ordenado" se se infiere que $a \star b$ puede llegar a ser distinto que $b \star a$, es decir, el orden importa al momento de operar.
+
+
+:::{prf:example}
+Tomemos $\mathbb{Z}^+$ y la operación binaria $\star$ como $a \star b$ que es igual al mínimo entre $a$ y $b$ o el valor común si $a = b$. Así, $2 \star 11 = 2$; $15 \star 10 = 10$ y $3 \star 3 = 3$.
+:::
+
+Claramente el ejemplo 
 ## Grupo
 
-Con esto ya en mente vamos a solicitar que para que un conjunto con una operación asociada cumpla una serie de principios. Informalmente se dice que un grupo es un conjunto que tiene asociada una operación que funciona _bien_ o como uno está habituado a que funcionen las operaciones si se piensa en los enteros o reales. 
+Con la noción de operación binaria en mente, para definir un _grupo_ vamos a solicitar más condiciones para trabajar bajo una estructura que "se comporte de buena manera". Informalmente se dice que un grupo es un conjunto con operación que funciona _bien_. De tal manera que se comporta como uno está habituado a que funcionen conjuntos como los que elementalmente ve en el colegio; los enteros con la suma o reales con la multiplicación. 
 
 ::::{prf:definition} Grupo
 :label: grupo
+
 Sea $G$ un conjunto no vacío y $\star : G \times G \to G$ una operación binaria se dice que $(G, \star)$ es _grupo_ si satisface las siguientes tres propieades:
 1. (**Asociatividad**) 
 Para todo $f, g, h \in G$ se cumple que
@@ -60,7 +69,7 @@ Es común que muchas veces se obvie el operador en la notación $(G, \star)$ y t
 > Sea $G$ grupo $\ldots$
 
 ## Propiedades
-Algunas propieades básicas que se desprenden de las propieades de todo grupo $(G, \star)$ son
+Algunas propiedades básicas que se desprenden de la definición de todo grupo $(G, \star)$ son
 
 ::::{prf:property}
 El elemento neutro es único

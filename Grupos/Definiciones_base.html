@@ -335,10 +335,17 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Se dice que <span class="math notranslate nohighlight">\(a \star b = c\)</span> si y sólo si <span class="math notranslate nohighlight">\(\star(a, b) = c\)</span> para <span class="math notranslate nohighlight">\(a, b, c \in A\)</span>.</p>
 </div>
 <p>De la forma en que está definido la operación binaria se pide que sea cerrado. Es decir, para cualquiera que sean los dos operandos, digamos <span class="math notranslate nohighlight">\(a\)</span> y <span class="math notranslate nohighlight">\(b\)</span> en <span class="math notranslate nohighlight">\(A\)</span>, el resultado de <span class="math notranslate nohighlight">\(a \star b\)</span> siempre está dentro de <span class="math notranslate nohighlight">\(A\)</span>.</p>
+<p>Al decir «par ordenado» se se infiere que <span class="math notranslate nohighlight">\(a \star b\)</span> puede llegar a ser distinto que <span class="math notranslate nohighlight">\(b \star a\)</span>, es decir, el orden importa al momento de operar.</p>
+<div class="proof example admonition" id="example-1">
+<p class="admonition-title"><span class="caption-number">Ejemplo 1.1 </span></p>
+<div class="example-content section" id="proof-content">
+<p>Tomemos <span class="math notranslate nohighlight">\(\mathbb{Z}^+\)</span> y la operación binaria <span class="math notranslate nohighlight">\(\star\)</span> como <span class="math notranslate nohighlight">\(a \star b\)</span> que es igual al mínimo entre <span class="math notranslate nohighlight">\(a\)</span> y <span class="math notranslate nohighlight">\(b\)</span> o el valor común si <span class="math notranslate nohighlight">\(a = b\)</span>. Así, <span class="math notranslate nohighlight">\(2 \star 11 = 2\)</span>; <span class="math notranslate nohighlight">\(15 \star 10 = 10\)</span> y <span class="math notranslate nohighlight">\(3 \star 3 = 3\)</span>.</p>
+</div>
+</div><p>Claramente el ejemplo</p>
 </div>
 <div class="section" id="grupo">
 <h2><span class="section-number">1.1.2. </span>Grupo<a class="headerlink" href="#grupo" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>Con esto ya en mente vamos a solicitar que para que un conjunto con una operación asociada cumpla una serie de principios. Informalmente se dice que un grupo es un conjunto que tiene asociada una operación que funciona <em>bien</em> o como uno está habituado a que funcionen las operaciones si se piensa en los enteros o reales.</p>
+<p>Con la noción de operación binaria en mente, para definir un <em>grupo</em> vamos a solicitar más condiciones para trabajar bajo una estructura que «se comporte de buena manera». Informalmente se dice que un grupo es un conjunto con operación que funciona <em>bien</em>. De tal manera que se comporta como uno está habituado a que funcionen conjuntos como los que elementalmente ve en el colegio; los enteros con la suma o reales con la multiplicación.</p>
 <div class="proof definition admonition" id="grupo">
 <p class="admonition-title"><span class="caption-number">Definición 1.2 </span> (Grupo)</p>
 <div class="definition-content section" id="proof-content">
@@ -381,8 +388,8 @@ se dice que el grupo <span class="math notranslate nohighlight">\((G, \star)\)</
 </div>
 <div class="section" id="propiedades">
 <h2><span class="section-number">1.1.3. </span>Propiedades<a class="headerlink" href="#propiedades" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>Algunas propieades básicas que se desprenden de las propieades de todo grupo <span class="math notranslate nohighlight">\((G, \star)\)</span> son</p>
-<div class="proof property admonition" id="property-2">
+<p>Algunas propiedades básicas que se desprenden de la definición de todo grupo <span class="math notranslate nohighlight">\((G, \star)\)</span> son</p>
+<div class="proof property admonition" id="property-3">
 <p class="admonition-title"><span class="caption-number">Propiedad 1.1 </span></p>
 <div class="property-content section" id="proof-content">
 <p>El elemento neutro es único</p>
@@ -397,7 +404,7 @@ e_1 = e_1 \star e_2 = e_2
 <p>Por ende el elemento neutro es único.</p>
 </div>
 </div>
-</div><div class="proof property admonition" id="property-3">
+</div><div class="proof property admonition" id="property-4">
 <p class="admonition-title"><span class="caption-number">Propiedad 1.2 </span></p>
 <div class="property-content section" id="proof-content">
 <p>Dado <span class="math notranslate nohighlight">\(g \in G\)</span> su inverso (<span class="math notranslate nohighlight">\(g^{-1}\)</span>) es único.</p>
@@ -425,7 +432,7 @@ h_1 \star g \star h_2 = h_1 \star (g \star h_2) = h_1 \star e = h_1
 <p>Por lo tanto dado <span class="math notranslate nohighlight">\(g \in G\)</span> su inverso es único.</p>
 </div>
 </div>
-</div><div class="proof property admonition" id="property-4">
+</div><div class="proof property admonition" id="property-5">
 <p class="admonition-title"><span class="caption-number">Propiedad 1.3 </span></p>
 <div class="property-content section" id="proof-content">
 <p><span class="math notranslate nohighlight">\((a \star b)^{-1}=b^{-1} \star a^{-1}\)</span></p>
