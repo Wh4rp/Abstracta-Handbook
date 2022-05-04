@@ -61,15 +61,15 @@ $$
 ```{note}
 Si la operación $\star$ conmuta, 
 i.e. para todo $f, g \in G$ se tiene que $f \star g = g \star f$,
- se dice que el grupo $(G, \star)$ es **abeliano**. 
+ se dice que $(G, \star)$ es **grupo abeliano**. 
 ```
 
-Es común que muchas veces se obvie el operador en la notación $(G, \star)$ y tan sólo se diga:
+Es común que muchas veces se obvie el operador en la notación $(G, \star)$ y tan sólo se escriba:
 
 > Sea $G$ grupo $\ldots$
 
 ## Propiedades
-Algunas propiedades básicas que se desprenden de la definición de todo grupo $(G, \star)$ son
+A continuación se muesrtran algunas propiedades básicas que se desprenden de la definición de todo grupo $(G, \star)$, es recomendable para soltar el lapiz intentar demostrarlas antes de leer inmediatamente la demostración.
 
 ::::{prf:property}
 El elemento neutro es único

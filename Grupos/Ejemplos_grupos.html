@@ -344,42 +344,71 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="ejemplos-de-grupos">
 <h1><span class="section-number">1.2. </span>Ejemplos de grupos<a class="headerlink" href="#ejemplos-de-grupos" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>En está sección se mostrarán ejemplos de grupos para aterrizar más la definición del mismo concepto de <em>grupo</em>.</p>
 <div class="section" id="si-son-grupos">
 <h2><span class="section-number">1.2.1. </span>Si son grupos<a class="headerlink" href="#si-son-grupos" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="proof example admonition" id="example-0">
+<p class="admonition-title"><span class="caption-number">Ejemplo 1.2 </span></p>
+<div class="example-content section" id="proof-content">
+<p><span class="math notranslate nohighlight">\((\mathbb{Z},+)\)</span> es un <em>grupo</em>, donde <span class="math notranslate nohighlight">\(+\)</span> es la suma de toda la vida en los enteros.</p>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(\mathbb{Z} / \mathrm{m}\)</span>
-La congruencia mód.ulo <span class="math notranslate nohighlight">\(m\)</span> es relación de equivalencia.
-Denotamos <span class="math notranslate nohighlight">\(\mathbb{Z} / \mathrm{m} \)</span> al conjunto de dases de equivalencia. Luego <span class="math notranslate nohighlight">\(\mathbb{Z} / m \pi=\{\overline{0}, \overline{1}, \overline{2}, \ldots, \overline{m-1}\}\)</span>
-es grupo abeliano con la operación <span class="math notranslate nohighlight">\(+\)</span>, donde</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[
-\overline{a}+\bar{b}=\overline{a+b}
-\]</div>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\((\mathbb{Z},+)\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(\left(Q^{x}, 0\right)\)</span> donde <span class="math notranslate nohighlight">\(\left(Q^{x}=Q \backslash\{0 \mid)\right.\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\((V,+)\)</span> donde <span class="math notranslate nohighlight">\(V\)</span> es espacio vectorial</p></li>
+<li><p>Elemento neutro: <span class="math notranslate nohighlight">\(0\)</span></p></li>
+<li><p>Inverso de <span class="math notranslate nohighlight">\(n \in \mathbb{Z}\)</span>: <span class="math notranslate nohighlight">\(-n\)</span></p></li>
+<li><p>Asociatividad: ✔</p></li>
 </ul>
 </div>
+</div><div class="proof example admonition" id="example-1">
+<p class="admonition-title"><span class="caption-number">Ejemplo 1.3 </span></p>
+<div class="example-content section" id="proof-content">
+<p>Sea <span class="math notranslate nohighlight">\(\mathrm{m}\)</span> un número positivo mayor que <span class="math notranslate nohighlight">\(1\)</span>, luego podemos definir la relación de equivalencia <span class="math notranslate nohighlight">\(\equiv_\mathrm{m}\)</span> como <span class="math notranslate nohighlight">\(a \equiv_\mathrm{m} b\)</span> si y sólo si <span class="math notranslate nohighlight">\(\mathrm{m} \mid a - b\)</span> con <span class="math notranslate nohighlight">\(a, b \in \mathbb{Z}\)</span>. Luego podemos definir el conjunto <span class="math notranslate nohighlight">\(\mathbb{Z} / \mathrm{m}\)</span> compuesto por las marcas de clase de <span class="math notranslate nohighlight">\(\equiv_\mathrm{m}\)</span>, es decir, <span class="math notranslate nohighlight">\(\mathbb{Z} / \mathrm{m} = \{ [0]_\mathrm{m}, [1]_\mathrm{m}, \ldots, [\mathrm{m} - 1]_\mathrm{m}\}\)</span>.</p>
+<p>Definimos la operación <span class="math notranslate nohighlight">\(+_\mathrm{m}\)</span> como <span class="math notranslate nohighlight">\([a]_\mathrm{m} +_\mathrm{m} [b]_\mathrm{m} = [c]_\mathrm{m}\)</span> donde <span class="math notranslate nohighlight">\(\mathrm{m} \mid (a + b) - c\)</span>.</p>
+<p><span class="math notranslate nohighlight">\((\mathbb{Z} / \mathrm{m}\)</span>, <span class="math notranslate nohighlight">\(+_\mathrm{m})\)</span> es un <em>grupo</em>.</p>
+<ul class="simple">
+<li><p>Elemento neutro: <span class="math notranslate nohighlight">\([0]_\mathrm{m}\)</span></p></li>
+<li><p>Inverso de <span class="math notranslate nohighlight">\([n]_\mathrm{m} \in \mathbb{Z} / \mathrm{m}\)</span>: <span class="math notranslate nohighlight">\([-n]_\mathrm{m}\)</span></p></li>
+<li><p>Asociatividad: ✔</p></li>
+</ul>
+</div>
+</div><div class="proof example admonition" id="example-2">
+<p class="admonition-title"><span class="caption-number">Ejemplo 1.4 </span></p>
+<div class="example-content section" id="proof-content">
+<p>Definimos <span class="math notranslate nohighlight">\(\mathbb{Q}^{\times}=\mathbb{Q} \, \backslash \, \{0 \}\)</span> y <span class="math notranslate nohighlight">\(\cdot\)</span> la multiplicación de racionales.</p>
+<p><span class="math notranslate nohighlight">\((\mathbb{Q}^{\times}, \cdot)\)</span> es <em>grupo</em>.</p>
+<ul class="simple">
+<li><p>Elemento neutro: <span class="math notranslate nohighlight">\(\frac{1}{1}\)</span></p></li>
+<li><p>Inverso de <span class="math notranslate nohighlight">\(\frac{a}{b} \in \mathbb{Q}^{\times}\)</span>: <span class="math notranslate nohighlight">\(\frac{b}{a}\)</span></p></li>
+<li><p>Asociatividad: ✔</p></li>
+</ul>
+</div>
+</div></div>
 <div class="section" id="son-grupos-abelianos">
 <h2><span class="section-number">1.2.2. </span>Son grupos (abelianos)<a class="headerlink" href="#son-grupos-abelianos" title="Enlazar permanentemente con este título">¶</a></h2>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\((\mathbb{N},+)\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\((\mathbb{C}, \cdot)\)</span></p></li>
-</ul>
+<div class="proof example admonition" id="example-3">
+<p class="admonition-title"><span class="caption-number">Ejemplo 1.5 </span></p>
+<div class="example-content section" id="proof-content">
+<p>Sea <span class="math notranslate nohighlight">\(V\)</span> espacio vectorial y <span class="math notranslate nohighlight">\(+\)</span> la suma definida dentro del espacio vectorial. <span class="math notranslate nohighlight">\((V,+)\)</span> es <em>grupo abeliano</em>. Esto se tiene por definición de espacio vectorial.</p>
 </div>
+</div><div class="proof example admonition" id="example-4">
+<p class="admonition-title"><span class="caption-number">Ejemplo 1.6 </span></p>
+<div class="example-content section" id="proof-content">
+<p><span class="math notranslate nohighlight">\((\mathbb{N},+)\)</span> es <em>grupo abeliano</em>.</p>
+</div>
+</div></div>
 <div class="section" id="no-son-grupos">
 <h2><span class="section-number">1.2.3. </span>No son grupos<a class="headerlink" href="#no-son-grupos" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="proof example admonition" id="example-5">
+<p class="admonition-title"><span class="caption-number">Ejemplo 1.7 </span></p>
+<div class="example-content section" id="proof-content">
 <div class="math notranslate nohighlight">
 \[\begin{split}
-G=G L_{2}(\Varangle)=\left\{\left(\begin{array}{l}
+G=G L_{2}(\mathbb{C})=\left\{\left(\begin{array}{l}
 2 b \\
 c d
 \end{array}\right): 2, b, c, d \in \mathbb{C}, \operatorname{det} \neq 0\right\}
 \end{split}\]</div>
 <p>con <span class="math notranslate nohighlight">\(\star=\)</span> multiplicación de matrices.</p>
 </div>
+</div></div>
 <div class="section" id="es-un-grupo-no-abeliano">
 <h2><span class="section-number">1.2.4. </span>Es un grupo no abeliano<a class="headerlink" href="#es-un-grupo-no-abeliano" title="Enlazar permanentemente con este título">¶</a></h2>
 <p><span class="math notranslate nohighlight">\(G=\mathbb{Z} / 2 \mathbb{Z} \times \mathbb{Z} / 3 \mathbb{Z}\)</span> con <span class="math notranslate nohighlight">\(\star\)</span> suma coordenada a coordenada es un grupo abeliano.</p>
@@ -392,12 +421,7 @@ D_{3}=\{I d, R, R \cdot R, S, S \cdot R, S \cdot R \cdot R\}
 <span class="math notranslate nohighlight">\(D_n\)</span> es el prupo de las simetrías y también se obtiene con rotación <span class="math notranslate nohighlight">\((R)\)</span>, reflexión <span class="math notranslate nohighlight">\((S)\)</span> y <span class="math notranslate nohighlight">\(\star\)</span> composición de estas.</p>
 <div class="section" id="grupo-diedral">
 <h3><span class="section-number">1.2.4.1. </span>Grupo diedral<a class="headerlink" href="#grupo-diedral" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>Dado un conjunto de <span class="math notranslate nohighlight">\(n\)</span> elementos usualmente : <span class="math notranslate nohighlight">\(X=\{1,2, \ldots, n\}\)</span>
-tenemos las biyecciones <span class="math notranslate nohighlight">\(\varphi: X \longrightarrow X\)</span>
-(o permutaciones), luego:
-<span class="math notranslate nohighlight">\(G=\{\)</span> biyecciones <span class="math notranslate nohighlight">\(X \rightarrow X\}\)</span>
-es un prupo con la operación dado por la composición. Se denota <span class="math notranslate nohighlight">\(S_{n}\)</span>
-(Grupo Simétrico)</p>
+<p>Dado un conjunto de <span class="math notranslate nohighlight">\(n\)</span> elementos usualmente : <span class="math notranslate nohighlight">\(X=\{1,2, \ldots, n\}\)</span>. Tenemos las biyecciones <span class="math notranslate nohighlight">\(\varphi: X \longrightarrow X\)</span> (o permutaciones). Luego: <span class="math notranslate nohighlight">\(G=\{\)</span> biyecciones <span class="math notranslate nohighlight">\(X \rightarrow X\}\)</span> es un prupo con la operación dado por la composición. Se denota <span class="math notranslate nohighlight">\(S_{n}\)</span> (Grupo Simétrico).</p>
 </div>
 </div>
 </div>
