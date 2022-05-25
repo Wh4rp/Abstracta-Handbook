@@ -1,5 +1,5 @@
 # Ejemplos de grupos
-En está sección se mostrarán ejemplos de grupos para aterrizar más la definición del mismo concepto de _grupo_. 
+En está sección se mostrarán ejemplos de grupos para aterrizar más la definición de este. 
 ## Si son grupos
 
 :::{prf:example}
@@ -14,7 +14,9 @@ $(\mathbb{Z},+)$ es un _grupo_, donde $+$ es la suma de toda la vida en los ente
 
 :::{prf:example}
 
-Sea $\mathrm{m}$ un número positivo mayor que $1$, luego podemos definir la relación de equivalencia $\equiv_\mathrm{m}$ como $a \equiv_\mathrm{m} b$ si y sólo si $\mathrm{m} \mid a - b$ con $a, b \in \mathbb{Z}$. Luego podemos definir el conjunto $\mathbb{Z} / \mathrm{m}$ compuesto por las marcas de clase de $\equiv_\mathrm{m}$, es decir, $\mathbb{Z} / \mathrm{m} = \{ [0]_\mathrm{m}, [1]_\mathrm{m}, \ldots, [\mathrm{m} - 1]_\mathrm{m}\}$. 
+Sea $\mathrm{m}$ un número positivo mayor que $1$, luego podemos definir la relación de equivalencia $\equiv_\mathrm{m}$ como $a \equiv_\mathrm{m} b$ si y sólo si $\mathrm{m} \mid a - b$ con $a, b \in \mathbb{Z}$. 
+
+Luego podemos definir el conjunto $\mathbb{Z} / \mathrm{m}$ compuesto por las marcas de clase de $\equiv_\mathrm{m}$, es decir, $\mathbb{Z} / \mathrm{m} = \{ [0]_\mathrm{m}, [1]_\mathrm{m}, \ldots, [\mathrm{m} - 1]_\mathrm{m}\}$. 
 
 Definimos la operación $+_\mathrm{m}$ como $[a]_\mathrm{m} +_\mathrm{m} [b]_\mathrm{m} = [c]_\mathrm{m}$ donde $\mathrm{m} \mid (a + b) - c$. 
 
@@ -47,7 +49,7 @@ Sea $V$ espacio vectorial y $+$ la suma definida dentro del espacio vectorial. $
 
 :::{prf:example}
 
-$(\mathbb{N},+)$ es _grupo abeliano_.
+$(\mathbb{Z},+)$ es _grupo abeliano_.
 :::
 
 ## No son grupos
