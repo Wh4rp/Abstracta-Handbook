@@ -2,7 +2,7 @@
 
 El concepto de ___grupo___ deviene de observar que hay propieades no triviales que son invariantes entre diversos conjuntos que poseen una operación asociada, por ejemplo los tanto en conjunto de las funciones biyectivas y el de las matrices se tiene que el inverso de $AB$ o $f \circ g$ es de la forma $B^{-1}A^{-1}$ o $g^{-1} \circ f^{-1}$ respectivamente. 
 
-Lo interesante de esto es que dichos resultados no estan presenten por simple coincidencia sino que debido a que sus operaciones asociadas cumple con cieros tres (o cuatro) axiomas principales. Y que debido a esta _abstracción_ se derivan las demás propieades no triviales. 
+Lo interesante de esto es que dichos resultados no estan presenten por simple coincidencia sino que debido a que sus operaciones asociadas cumple con ciertos tres (o cuatro) axiomas principales. Y debido a esta _abstracción_ se derivan las demás propieades no triviales. 
 
 ## Operación binaria
 
@@ -11,23 +11,24 @@ Bajo la noción de grupo que se va a presentar en este libro primero se definir�
 :::{prf:definition} Operación binaria
 :label: operacion-binaria
 
-Una operación binaria $\star$ en un conjunto no vacio $A$, es una función que asigna a cada par ordenado de elementos de $A$, algún elemento del conjunto. S
+Una operación binaria $\star$ bajo un conjunto no vacio $A$, es una función $\star : (A \times A) \to A$. Es decir, asigna a cada par ordenado de elementos de $A$, algún elemento de $A$.
 :::
 
 :::{note}
 Se dice que $a \star b = c$ si y sólo si $\star(a, b) = c$ para $a, b, c \in A$. 
 :::
 
-De la forma en que está definido la operación binaria se pide que sea cerrado. Es decir, para cualquiera que sean los dos operandos, digamos $a$ y $b$ en $A$, el resultado de $a \star b$ siempre está dentro de $A$. 
+De la forma en que está definido la operación binaria se pide que sea *cerrado*. Es decir, para cualquiera que sean los dos operandos, digamos $a$ y $b$ en $A$, el resultado de $a \star b$ siempre está dentro de $A$. 
 
-Al decir "par ordenado" se se infiere que $a \star b$ puede llegar a ser distinto que $b \star a$, es decir, el orden importa al momento de operar.
+Al decir "par ordenado" se infiere que $a \star b$ puede llegar a ser distinto que $b \star a$, es decir, el orden importa al momento de operar.
 
 
 :::{prf:example}
-Tomemos $\mathbb{Z}^+$ y la operación binaria $\star$ como $a \star b$ que es igual al mínimo entre $a$ y $b$ o el valor común si $a = b$. Así, $2 \star 11 = 2$; $15 \star 10 = 10$ y $3 \star 3 = 3$.
+Tomemos $\mathbb{Z}^+$ y la operación binaria $\star$ como $a \star b$ que es igual al mínimo entre $a$ y $b$ o el valor común si $a = b$. 
+
+Así, $2 \star 11 = 2$; $15 \star 10 = 10$ y $3 \star 3 = 3$.
 :::
 
-Claramente el ejemplo 
 ## Grupo
 
 Con la noción de operación binaria en mente, para definir un _grupo_ vamos a solicitar más condiciones para trabajar bajo una estructura que "se comporte de buena manera". Informalmente se dice que un grupo es un conjunto con operación que funciona _bien_. De tal manera que se comporta como uno está habituado a que funcionen conjuntos como los que elementalmente ve en el colegio; los enteros con la suma o reales con la multiplicación. 
@@ -69,7 +70,7 @@ Es común que muchas veces se obvie el operador en la notación $(G, \star)$ y t
 > Sea $G$ grupo $\ldots$
 
 ## Propiedades
-A continuación se muesrtran algunas propiedades básicas que se desprenden de la definición de todo grupo $(G, \star)$, es recomendable para soltar el lapiz intentar demostrarlas antes de leer inmediatamente la demostración.
+A continuación se muestran algunas propiedades básicas que se desprenden de la definición de grupo $(G, \star)$, es recomendable para *soltar el lapiz* intentar demostrarlas antes de leer inmediatamente la demostración.
 
 ::::{prf:property}
 El elemento neutro es único
